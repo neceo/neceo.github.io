@@ -29,7 +29,7 @@ function addIMG(alt,title){
 	// todo 
 	if(!!alt){
 
-		var img='<img src="'+alt+'" title="'+title+'" class="img-thumbnail" width="20%" height="20%" >';
+		var img='<img src="'+alt+'" title="'+title+'" class="img-thumbnail" width="58px" >';
 
 		$(img).insertAfter('#_start');
 	}
@@ -42,7 +42,7 @@ var latest;
 
 $('.girls').delegate('img','click',function(){
 	if(!!latest){
-		sea(latest,'20%');
+		sea(latest,'58px');
 	}
 	sea($(this),'auto');
 	latest=$(this);
