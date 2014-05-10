@@ -29,7 +29,7 @@ function addIMG(alt,title){
 	// todo 
 	if(!!alt){
 
-		var img='<img src="'+alt+'" title="'+title+'" class="img-thumbnail" width="58px" >';
+		var img='<img src="'+alt+'" title="'+title+'" class="img-thumbnail" width="5%" >';
 
 		$(img).insertAfter('#_start');
 	}
@@ -42,7 +42,7 @@ var latest;
 
 $('.girls').delegate('img','click',function(){
 	if(!!latest){
-		sea(latest,'58px');
+		sea(latest,'5%');
 	}
 	sea($(this),'auto');
 	latest=$(this);
@@ -56,10 +56,10 @@ function sea(obj,arg){
 
 
 var _urls=[
-'https://api.douban.com/v2/group/407518/topics?count=40&callback=?',
-'https://api.douban.com/v2/group/kaopulove/topics?callback=?',
-'https://api.douban.com/v2/group/ai_Junko/topics?callback=?',
-'https://api.douban.com/v2/group/haixiuzu/topics?callback=?',
+'https://api.douban.com/v2/group/407518/topics?count=2&callback=?',
+//'https://api.douban.com/v2/group/kaopulove/topics?callback=?',
+//'https://api.douban.com/v2/group/ai_Junko/topics?callback=?',
+//'https://api.douban.com/v2/group/haixiuzu/topics?callback=?',
 ];
 
 function shuffle(o){ 
