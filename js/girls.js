@@ -56,7 +56,7 @@ function sea(obj,arg){
 
 
 var _urls=[
-'https://api.douban.com/v2/group/407518/topics?count=2&callback=?',
+'https://api.douban.com/v2/group/407518/topics?count=1&callback=?',
 //'https://api.douban.com/v2/group/kaopulove/topics?callback=?',
 //'https://api.douban.com/v2/group/ai_Junko/topics?callback=?',
 //'https://api.douban.com/v2/group/haixiuzu/topics?callback=?',
