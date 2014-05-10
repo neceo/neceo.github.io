@@ -29,7 +29,8 @@ function addIMG(alt,title){
 	// todo 
 	if(!!alt){
 
-		var img='<img src="'+alt+'" title="'+title+'" class="img-thumbnail" width="5%" >';
+	//	var img='<img src="'+alt+'" title="'+title+'" class="img-thumbnail" width="5%" >';
+		var img='<img src="'+alt+'" title="'+title+'" >';
 
 		$(img).insertAfter('#_start');
 	}
