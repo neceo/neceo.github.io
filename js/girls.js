@@ -9,7 +9,7 @@ function fetch(url){
 				$.each(_ts,function(i,t){
 
 					//well
-					if(t.comments_count>10){
+					if(t.like_count>32){
 						var _ps=t.photos;
 						$.each(_ps,function(j,p){
 							addIMG(p.alt,p.title);
@@ -29,8 +29,7 @@ function addIMG(alt,title){
 	// todo 
 	if(!!alt){
 
-	//	var img='<img src="'+alt+'" title="'+title+'" class="img-thumbnail" width="5%" >';
-		var img='<img src="'+alt+'" title="'+title+'" >';
+		var img='<img src="'+alt+'" title="'+title+'" class="img-thumbnail" width="5%" >';
 
 		$(img).insertAfter('#_start');
 	}
@@ -57,10 +56,10 @@ function sea(obj,arg){
 
 
 var _urls=[
-'https://api.douban.com/v2/group/407518/topics?count=1&callback=?',
-//'https://api.douban.com/v2/group/kaopulove/topics?callback=?',
-//'https://api.douban.com/v2/group/ai_Junko/topics?callback=?',
-//'https://api.douban.com/v2/group/haixiuzu/topics?callback=?',
+'https://api.douban.com/v2/group/407518/topics?count=100&callback=?',
+'https://api.douban.com/v2/group/kaopulove/topics?count=100&callback=?',
+'https://api.douban.com/v2/group/ai_Junko/topics?count=100&callback=?',
+'https://api.douban.com/v2/group/haixiuzu/topics?count=100&callback=?'
 ];
 
 function shuffle(o){ 
