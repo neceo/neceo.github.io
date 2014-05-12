@@ -29,7 +29,7 @@ function addIMG(alt,title){
 	// todo 
 	if(!!alt){
 
-		var img='<img src="'+alt+'" title="'+title+'" class="img-thumbnail" width="5%" >';
+		var img='<img src="'+alt+'" title="'+title+'" class="img-thumbnail">';
 
 		$(img).insertAfter('#_start');
 	}
@@ -38,28 +38,26 @@ function addIMG(alt,title){
 }
 
 
-var latest;
-
-$('.girls').delegate('img','click',function(){
-	if(!!latest){
-		sea(latest,'5%');
-	}
-	sea($(this),'auto');
-	latest=$(this);
-
-});
-
-function sea(obj,arg){
-	$(obj).css('width',arg);
-	$(obj).css('height',arg);
-}
+//var latest;
+//
+//$('.girls').delegate('img','click',function(){
+//	if(!!latest){
+//		sea(latest,'5%');
+//	}
+//	sea($(this),'auto');
+//	latest=$(this);
+//
+//});
+//
+//function sea(obj,arg){
+//	$(obj).css('width',arg);
+//	$(obj).css('height',arg);
+//}
 
 
 var _urls=[
 'https://api.douban.com/v2/group/407518/topics?count=100&callback=?',
-'https://api.douban.com/v2/group/kaopulove/topics?count=100&callback=?',
-'https://api.douban.com/v2/group/ai_Junko/topics?count=100&callback=?',
-'https://api.douban.com/v2/group/haixiuzu/topics?count=100&callback=?'
+'https://api.douban.com/v2/group/ai_Junko/topics?count=100&callback=?'
 ];
 
 function shuffle(o){ 
